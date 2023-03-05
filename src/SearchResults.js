@@ -8,8 +8,8 @@ function SearchResults (props) {
 				{results.map((result) => {
 					return (
 						<a key={result.id} href={result.previewURL} className="result-items">
-							{/* <h6 className="image-username">{result.user}</h6> */}
-							{/* <div className="image-wrapper"> */}
+							{/* <h6 className="image-username">{result.user}</h6>  */}
+							 {/* <div className="image-wrapper">  */}
 								<img className="image" src={result.previewURL} alt={result.user}/>
 							{/* </div> */}
 						</a>
