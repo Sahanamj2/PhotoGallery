@@ -5,8 +5,8 @@ function PageNavigation(props){
    const showNextLink = props.pageNo.totalPages > props.pageNo.currentPageNo;
     return(
         <div className="nav-link-container">
-            <a href="#" className={`nav-link ${showPrevLink ? 'show' : 'hide'}`} onClick={props.handlePageClickPrev}>Prev</a>
-            <a href="#" className={`nav-link ${showNextLink ? 'show' : 'hide'}`} onClick={props.handlePageClickNext}>Next</a>
+            <button type="submit" className={`nav-link ${showPrevLink ? 'show' : 'hide'}`} onClick={props.handlePageClickPrev}>Prev</button>
+            <button type="submit" className={`nav-link ${showNextLink ? 'show' : 'hide'}`} onClick={props.handlePageClickNext}>Next</button>
         </div>
 
     )
