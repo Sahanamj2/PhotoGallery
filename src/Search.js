@@ -108,11 +108,8 @@ const Search = () => {
 
       <PageNavigation
         pageNo={pageNo}
-        handlePageClickPrev={() => {
-          handlePageClick("prev");
-        }}
-        handlePageClickNext={() => {
-          handlePageClick("next");
+        handlePageClicks={(props) => {
+          handlePageClick(props);
         }}
       />
       <SearchResults field={field} />

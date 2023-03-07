@@ -6,7 +6,6 @@ function SearchResults(props) {
   const [lightboxDisplay, setLightBoxDisplay] = useState(false);
 
   const handlePhotoClick = (image) => {
-    console.log("cicked")
     //set imageToShow to be the one that's been clicked on
     setImageToShow(image);
     //set lightbox visibility to true
